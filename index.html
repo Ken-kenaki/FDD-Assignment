@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WellnessHub - Transform Your Life with Habits</title>
+    <link rel="stylesheet" href="styles/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar with desktop dropdown + mobile drawer -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <button class="nav-toggle" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a class="nav-logo" href="index.html">
+          <span class="logo-icon"><i class="fa-solid fa-seedling"></i></span>
+          <span class="logo-text">WellnessHub</span>
+        </a>
+        <ul class="nav-menu">
+          <li class="has-sub">
+            <a href="programs.html">Programs</a>
+          </li>
+          <li class="dropdown">
+            <a href="blog.html" class="dropdown-toggle"
+              >Blogs <i class="fa-solid fa-angle-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="blog-sleep.html"
+                  ><i class="fa-regular fa-moon"></i> Sleep Routine</a
+                >
+              </li>
+              <li>
+                <a href="blog-habit-stacking.html"
+                  ><i class="fa-solid fa-list-check"></i> Habit Stacking</a
+                >
+              </li>
+              <li>
+                <a href="blog-mindfulness.html"
+                  ><i class="fa-regular fa-face-smile"></i> Mindfulness</a
+                >
+              </li>
+              <li>
+                <a href="blog-beginner-strength.html"
+                  ><i class="fa-solid fa-dumbbell"></i> Beginner Strength</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="community.html">Community</a></li>
+          <li><a href="#support">Support</a></li>
+        </ul>
+        <div class="nav-profile">
+          <span class="notification-icon" title="Notifications">
+            <i class="fa-regular fa-bell"></i>
+          </span>
+          <a class="btn-consult" href="consultation.html">
+            <i class="fa-solid fa-user-doctor"></i>
+            Get Consultation
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile Drawer -->
+      <aside class="mobile-drawer" aria-hidden="true">
+        <div class="drawer-header">
+          <span class="logo"
+            ><i class="fa-solid fa-seedling"></i> WellnessHub</span
+          >
+          <button class="drawer-close" aria-label="Close menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <nav class="drawer-nav">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="programs.html"
+            ><i class="fa-solid fa-list-check"></i> Programs</a
+          >
+          <details class="drawer-accordion">
+            <summary><i class="fa-solid fa-blog"></i> Blogs</summary>
+            <div class="drawer-submenu">
+              <a href="blog-sleep.html"
+                ><i class="fa-regular fa-moon"></i> Sleep Routine</a
+              >
+              <a href="blog-plant-protein.html"
+                ><i class="fa-solid fa-bowl-food"></i> Plant Protein 101</a
+              >
+              <a href="blog-habit-stacking.html"
+                ><i class="fa-solid fa-list-check"></i> Habit Stacking</a
+              >
+              <a href="blog-mindfulness.html"
+                ><i class="fa-regular fa-face-smile"></i> Mindfulness</a
+              >
+              <a href="blog-beginner-strength.html"
+                ><i class="fa-solid fa-dumbbell"></i> Beginner Strength</a
+              >
+            </div>
+          </details>
+          <a href="community.html"
+            ><i class="fa-solid fa-people-group"></i> Community</a
+          >
+          <a href="index.html#support"
+            ><i class="fa-solid fa-hand-holding-heart"></i> Support</a
+          >
+          <a class="drawer-consult" href="consultation.html"
+            ><i class="fa-solid fa-user-doctor"></i> Get Consultation</a
+          >
+        </nav>
+      </aside>
+      <div class="drawer-backdrop" aria-hidden="true"></div>
+    </nav>
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>
+            Transform Your Life with <span class="highlight">Habits</span>
+          </h1>
+          <p>
+            Join thousands of people on their journey to better health through
+            our comprehensive wellness programs, supportive community, and
+            expert guidance.
+          </p>
+          <div class="hero-buttons">
+            <a class="btn-primary" href="consultation.html"
+              ><i class="fa-solid fa-rocket"></i> Start Your Journey</a
+            >
+            <a class="btn-secondary" href="programs.html"
+              ><i class="fa-solid fa-list-check"></i> Explore Programs</a
+            >
+          </div>
+          <div class="stats">
+            <div class="stat-item">
+              <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+              <div class="stat-info">
+                <strong>12,000+</strong> <span>Active Members</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Happy people exercising outdoors"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="programs" id="programs">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Wellness Programs</h2>
+          <p>
+            Discover personalized programs designed to help you achieve your
+            health and wellness goals
+          </p>
+        </div>
+        <div class="programs-grid">
+          <div class="program-card" id="fitness">
+            <div class="program-image">
+              <img
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Fitness & Strength"
+              />
+            </div>
+            <div class="program-content">
+              <div class="program-icon">
+                <i class="fa-solid fa-dumbbell"></i>
+              </div>
+              <h3>Fitness & Strength</h3>
+              <p>
+                Build strength, endurance, and confidence with our comprehensive
+                fitness programs tailored to all levels.
+              </p>
+              <div class="program-stats">
+                <span
+                  ><i class="fa-solid fa-user-group"></i> 3,240
+                  participants</span
+                >
+              </div>
+              <a href="fitness-strength.html" class="learn-more"
+                >Learn More →</a
+              >
+            </div>
+          </div>
+          <div class="program-card" id="nutrition">
+            <div class="program-image nutrition-image">
+              <div class="nutrition-grid">
+                <div class="food-item orange"></div>
+                <div class="food-item green"></div>
+                <div class="food-item yellow"></div>
+                <div class="food-item red"></div>
+              </div>
+            </div>
+            <div class="program-content">
+              <div class="program-icon"><i class="fa-solid fa-leaf"></i></div>
+              <h3>Plant-Based Nutrition</h3>
+              <p>
+                Discover the power of plant-based eating with guided meal plans,
+                recipes, and nutritional education.
+              </p>
+              <div class="program-stats">
+                <span
+                  ><i class="fa-solid fa-user-group"></i> 2,700
+                  participants</span
+                >
+              </div>
+              <a href="fitness-strength.html" class="learn-more"
+                >Learn More →</a
+              >
+            </div>
+          </div>
+
+          <div class="program-card" id="mental">
+            <div class="program-image">
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Mental Wellness"
+              />
+            </div>
+            <div class="program-content">
+              <div class="program-icon"><i class="fa-solid fa-brain"></i></div>
+              <h3>Mental Wellness</h3>
+              <p>
+                Support your emotional mental health through mindfulness, stress
+                management, and emotional well-being practices.
+              </p>
+              <div class="program-stats">
+                <span
+                  ><i class="fa-solid fa-user-group"></i> 1,900
+                  participants</span
+                >
+              </div>
+              <a href="programs.html#mental" class="learn-more">Learn More →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="support-groups" id="support">
+      <div class="container">
+        <div class="section-header">
+          <h2>Support & Recovery Groups</h2>
+          <p>
+            Find strength in community with our specialized support groups for
+            addiction recovery and lifestyle changes
+          </p>
+        </div>
+        <div class="support-grid">
+          <div class="support-card">
+            <div class="support-icon red">
+              <i class="fa-solid fa-ban-smoking"></i>
+            </div>
+            <h3>Smoking Cessation Support</h3>
+            <p>
+              Join our supportive community of individuals committed to quitting
+              smoking. Weekly meetings, peer support, and professional guidance.
+            </p>
+            <div class="support-stats">
+              <span class="meeting-time"
+                ><i class="fa-regular fa-calendar"></i> Tuesdays 7:00 PM</span
+              >
+              <span class="member-count"
+                ><i class="fa-solid fa-user-group"></i> 32 members</span
+              >
+            </div>
+            <button class="join-group red">
+              <i class="fa-solid fa-door-open"></i> Join Group
+            </button>
+          </div>
+          <div class="support-card">
+            <div class="support-icon purple">
+              <i class="fa-solid fa-wine-glass-empty"></i>
+            </div>
+            <h3>Alcohol Recovery Circle</h3>
+            <p>
+              A safe, confidential space for individuals in recovery. Share
+              experiences, celebrate milestones, and build lasting connections.
+            </p>
+            <div class="support-stats">
+              <span class="meeting-time"
+                ><i class="fa-regular fa-calendar"></i> Thursdays 6:30 PM</span
+              >
+              <span class="member-count"
+                ><i class="fa-solid fa-user-group"></i> 28 members</span
+              >
+            </div>
+            <button class="join-group purple">
+              <i class="fa-solid fa-door-open"></i> Join Group
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="impact">
+      <div class="container">
+        <h2>Making a Real Impact</h2>
+        <p>
+          See how our community is transforming lives through healthy lifestyle
+          choices
+        </p>
+        <div class="impact-stats">
+          <div class="impact-stat">
+            <h3>12,000+</h3>
+            <p>Active Members</p>
+          </div>
+          <div class="impact-stat">
+            <h3>85%</h3>
+            <p>Success Rate</p>
+          </div>
+          <div class="impact-stat">
+            <h3>500+</h3>
+            <p>Quit Smoking</p>
+          </div>
+          <div class="impact-stat">
+            <h3>2,400</h3>
+            <p>Plant-Based Converts</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="success-stories">
+      <div class="container">
+        <div class="section-header">
+          <h2>Success Stories</h2>
+          <p>Real people, real transformations</p>
+        </div>
+        <div class="stories-grid">
+          <div class="story-card">
+            <div class="story-avatar">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+                alt="Michael Chen"
+              />
+            </div>
+            <div class="story-content">
+              <h4>Michael Chen</h4>
+              <span class="story-duration">Quit smoking after 15 years</span>
+              <p>
+                "The support group gave me the strength I needed. 8 months
+                smoke-free and feeling incredible!"
+              </p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="story-card">
+            <div class="story-avatar">
+              <img
+                src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+                alt="Sarah Johnson"
+              />
+            </div>
+            <div class="story-content">
+              <h4>Sarah Johnson</h4>
+              <span class="story-duration">Plant-based transformation</span>
+              <p>
+                "Switching to plant-based eating changed my life. More energy,
+                better health, and I love the community!"
+              </p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="story-card">
+            <div class="story-avatar">
+              <img
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+                alt="David Rodriguez"
+              />
+            </div>
+            <div class="story-content">
+              <h4>David Rodriguez</h4>
+              <span class="story-duration">Mental wellness journey</span>
+              <p>
+                "Lost 30 pounds and gained so much confidence. The trainers and
+                community support are amazing!"
+              </p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Start Your Wellness Journey?</h2>
+        <p>
+          Join our supportive community and take the first step towards a
+          healthier, happier you.
+        </p>
+        <div class="cta-buttons">
+          <a class="btn-primary" href="consultation.html"
+            ><i class="fa-solid fa-clipboard-check"></i> Get Started Today</a
+          >
+          <a class="btn-secondary" href="consultation.html"
+            ><i class="fa-regular fa-calendar-check"></i> Schedule
+            Consultation</a
+          >
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon"
+              ><i class="fa-solid fa-notes-medical"></i
+            ></span>
+            <span class="logo-text">WellnessHub</span>
+          </div>
+          <p>
+            Empowering people to live healthier, happier lives through support,
+            community, and expert guidance.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-link" aria-label="Twitter/X"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="#" class="social-link" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Programs</h4>
+            <ul>
+              <li><a href="programs.html#fitness">Fitness & Strength</a></li>
+              <li>
+                <a href="programs.html#nutrition">Plant-Based Nutrition</a>
+              </li>
+              <li><a href="programs.html#mental">Mental Wellness</a></li>
+              <li><a href="programs.html#weight">Weight Management</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#support">Smoking Cessation</a></li>
+              <li><a href="#support">Alcohol Recovery</a></li>
+              <li><a href="#support">Addiction Support</a></li>
+              <li><a href="#support">Crisis Resources</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <ul>
+              <li><i class="fa-solid fa-phone"></i> 1-800-WELLNESS</li>
+              <li>
+                <i class="fa-regular fa-envelope"></i> support@wellnesshub.org
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i> Find Local Groups
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2024 WellnessHub. All rights reserved. | Privacy Policy | Terms of
+          Service
+        </p>
+      </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
