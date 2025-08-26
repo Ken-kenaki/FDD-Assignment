@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support - WellnessHub</title>
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/support.css" /> 
+    <link rel="stylesheet" href="styles/global.css">
+  </head>
+  <body>
+    <!-- Navbar with desktop dropdown + mobile drawer -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <button class="nav-toggle" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a class="nav-logo" href="index.html">
+          <span class="logo-icon"><i class="fa-solid fa-seedling"></i></span>
+          <span class="logo-text">WellnessHub</span>
+        </a>
+        <ul class="nav-menu">
+          <li class="has-sub">
+            <a href="programs.html">Programs</a>
+          </li>
+          <li class="dropdown">
+            <a href="blog.html" class="dropdown-toggle"
+              >Blogs <i class="fa-solid fa-angle-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="blog-sleep.html"
+                  ><i class="fa-regular fa-moon"></i> Sleep Routine</a
+                >
+              </li>
+              <li>
+                <a href="blog-habit-stacking.html"
+                  ><i class="fa-solid fa-list-check"></i> Habit Stacking</a
+                >
+              </li>
+              <li>
+                <a href="blog-mindfulness.html"
+                  ><i class="fa-regular fa-face-smile"></i> Mindfulness</a
+                >
+              </li>
+              <li>
+                <a href="blog-beginner-strength.html"
+                  ><i class="fa-solid fa-dumbbell"></i> Beginner Strength</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="community.html">Community</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+        <div class="nav-profile">
+          <a class="btn-consult" href="consultation.html">
+            <i class="fa-solid fa-user-doctor"></i>
+            Get Consultation
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile Drawer -->
+      <aside class="mobile-drawer" aria-hidden="true">
+        <div class="drawer-header">
+          <span class="logo"
+            ><i class="fa-solid fa-seedling"></i> WellnessHub</span
+          >
+          <button class="drawer-close" aria-label="Close menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <nav class="drawer-nav">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="programs.html"
+            ><i class="fa-solid fa-list-check"></i> Programs</a
+          >
+          <details class="drawer-accordion">
+            <summary><i class="fa-solid fa-blog"></i> Blogs</summary>
+            <div class="drawer-submenu">
+              <a href="blog-sleep.html"
+                ><i class="fa-regular fa-moon"></i> Sleep Routine</a
+              >
+              <a href="blog-plant-protein.html"
+                ><i class="fa-solid fa-bowl-food"></i> Plant Protein 101</a
+              >
+              <a href="blog-habit-stacking.html"
+                ><i class="fa-solid fa-list-check"></i> Habit Stacking</a
+              >
+              <a href="blog-mindfulness.html"
+                ><i class="fa-regular fa-face-smile"></i> Mindfulness</a
+              >
+              <a href="blog-beginner-strength.html"
+                ><i class="fa-solid fa-dumbbell"></i> Beginner Strength</a
+              >
+            </div>
+          </details>
+          <a href="community.html"
+            ><i class="fa-solid fa-people-group"></i> Community</a
+          >
+          <a href="support.html"
+            ><i class="fa-solid fa-hand-holding-heart"></i> Support</a
+          >
+          <a class="drawer-consult" href="consultation.html"
+            ><i class="fa-solid fa-user-doctor"></i> Get Consultation</a
+          >
+        </nav>
+      </aside>
+      <div class="drawer-backdrop" aria-hidden="true"></div>
+    </nav>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1><i class="fa-solid fa-hand-holding-heart"></i> Support Our Mission</h1>
+        <p>Your donation helps us continue providing life-changing support to those in need.</p>
+      </div>
+    </section>
+
+    <section class="impact-stats">
+      <div class="stats-container">
+        <h2>Your Impact So Far</h2>
+        <p class="subheading">With the support of our generous community, we've achieved remarkable milestones in helping people transform their lives.</p>
+        
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-icon" style="color: #3a86ff;">
+              <i class="fa-solid fa-users"></i>
+            </span>
+            <div class="stat-number">5,247</div>
+            <div class="stat-text">People Supported</div>
+          </div>
+          
+          <div class="stat-card">
+            <span class="stat-icon" style="color: #ff9e00;">
+              <i class="fa-solid fa-smoking-ban"></i>
+            </span>
+            <div class="stat-number">1,893</div>
+            <div class="stat-text">Smoking Cessation Success Stories</div>
+          </div>
+          
+          <div class="stat-card">
+            <span class="stat-icon" style="color: #e63946;">
+              <i class="fa-solid fa-wine-bottle"></i>
+            </span>
+            <div class="stat-number">1,425</div>
+            <div class="stat-text">Alcohol Recovery Journeys</div>
+          </div>
+          
+          <div class="stat-card">
+            <span class="stat-icon" style="color: #2a9d8f;">
+              <i class="fa-solid fa-heart-circle-check"></i>
+            </span>
+            <div class="stat-number">3,756</div>
+            <div class="stat-text">Mental Wellness Improvements</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="donation-section">
+      <div class="donation-container">
+        <h2>Make a Difference Today</h2>
+        <p class="subheading">Choose a donation option that works for you and help us continue our vital work.</p>
+        
+        <div class="donation-options">
+          <div class="donation-card">
+            <h3>Monthly Supporter</h3>
+            <div class="donation-amount">$25/month</div>
+            <p class="donation-description">Provide ongoing support for our community programs</p>
+            <ul class="donation-features">
+              <li><i class="fa-solid fa-check"></i> Funds 2 weekly support sessions</li>
+              <li><i class="fa-solid fa-check"></i> Monthly impact report</li>
+              <li><i class="fa-solid fa-check"></i> Supporter certificate</li>
+            </ul>
+            <a href="#" class="btn-donate">Donate Monthly</a>
+          </div>
+          
+          <div class="donation-card featured">
+            <h3>Transformation Sponsor</h3>
+            <div class="donation-amount">$100</div>
+            <p class="donation-description">Sponsor one person's complete journey to recovery</p>
+            <ul class="donation-features">
+              <li><i class="fa-solid fa-check"></i> Covers 6 weeks of personalized support</li>
+              <li><i class="fa-solid fa-check"></i> Progress updates on the person you helped</li>
+              <li><i class="fa-solid fa-check"></i> Exclusive impact report</li>
+              <li><i class="fa-solid fa-check"></i> Recognition in our annual report</li>
+            </ul>
+            <a href="#" class="btn-donate">Sponsor Now</a>
+          </div>
+          
+          <div class="donation-card">
+            <h3>Program Champion</h3>
+            <div class="donation-amount">$500</div>
+            <p class="donation-description">Help us sustain an entire support program for a month</p>
+            <ul class="donation-features">
+              <li><i class="fa-solid fa-check"></i> Supports a program for 30 days</li>
+              <li><i class="fa-solid fa-check"></i> Named recognition on our website</li>
+              <li><i class="fa-solid fa-check"></i> Personal thank you from our team</li>
+              <li><i class="fa-solid fa-check"></i> Invitation to our annual appreciation event</li>
+            </ul>
+            <a href="#" class="btn-donate">Become a Champion</a>
+          </div>
+        </div>
+        
+        <div class="custom-amount">
+          <h3>Or Give a Custom Amount</h3>
+          <p>Every donation, no matter the size, makes a difference.</p>
+          
+          <form class="donation-form">
+            <div class="form-group">
+              <label for="amount">Donation Amount ($)</label>
+              <input type="number" id="amount" min="1" step="1" placeholder="Enter amount" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Your name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Your email" required>
+            </div>
+            
+            <button type="submit" class="btn-donate">Donate Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2>Stories of Transformation</h2>
+        <p class="subheading">Hear from those whose lives have been changed through our support programs.</p>
+        
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-text">After 15 years of smoking, I had given up hope of ever quitting. The cessation program at WellnessHub gave me the tools and support I needed. I'm now 2 years smoke-free!</p>
+            <div class="testimonial-author">Diwash A.</div>
+            <div class="testimonial-role">Former program participant</div>
+          </div>
+          
+          <div class="testimonial-card">
+            <p class="testimonial-text">As a monthly donor, I get to see exactly how my contributions are making a difference. The regular updates and stories of recovery make me proud to support this organization.</p>
+            <div class="testimonial-author">Kabish D.</div>
+            <div class="testimonial-role">Monthly supporter for 3 years</div>
+          </div>
+          
+          <div class="testimonial-card">
+            <p class="testimonial-text">The alcohol recovery circle saved my life. I had hit rock bottom when I found WellnessHub. The compassionate community and professional guidance helped me rebuild everything.</p>
+            <div class="testimonial-author">David R.</div>
+            <div class="testimonial-role">Recovery program graduate</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon"
+              ><i class="fa-solid fa-notes-medical"></i
+            ></span>
+            <span class="logo-text">WellnessHub</span>
+          </div>
+          <p>
+            Empowering people to live healthier, happier lives through support,
+            community, and expert guidance.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-link" aria-label="Twitter/X"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="#" class="social-link" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Programs</h4>
+            <ul>
+              <li><a href="programs.html#fitness">Fitness & Strength</a></li>
+              <li>
+                <a href="programs.html#nutrition">Plant-Based Nutrition</a>
+              </li>
+              <li><a href="programs.html#mental">Mental Wellness</a></li>
+              <li><a href="programs.html#weight">Weight Management</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="support.html">Smoking Cessation</a></li>
+              <li><a href="support.html">Alcohol Recovery</a></li>
+              <li><a href="support.html">Addiction Support</a></li>
+              <li><a href="support.html">Crisis Resources</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <ul>
+              <li><i class="fa-solid fa-phone"></i> 1-800-WELLNESS</li>
+              <li>
+                <i class="fa-regular fa-envelope"></i> support@wellnesshub.org
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i> Find Local Groups
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2024 WellnessHub. All rights reserved. | Privacy Policy | Terms of
+          Service
+        </p>
+      </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/support.js"></script>
+  </body>
+</html>

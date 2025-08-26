@@ -19,20 +19,20 @@
       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
+    <!-- Navbar with desktop dropdown + mobile drawer -->
     <nav class="navbar">
       <div class="nav-container">
         <button class="nav-toggle" aria-label="Open menu">
           <i class="fa-solid fa-bars"></i>
         </button>
-        <a class="nav-logo" href="index.html"
-          ><span class="logo-icon"><i class="fa-solid fa-seedling"></i></span
-          ><span class="logo-text">WellnessHub</span></a
-        >
+        <a class="nav-logo" href="index.html">
+          <span class="logo-icon"><i class="fa-solid fa-seedling"></i></span>
+          <span class="logo-text">WellnessHub</span>
+        </a>
         <ul class="nav-menu">
-          <li><a class="active" href="programs.html">Programs</a></li>
+          <li class="has-sub">
+            <a href="programs.html">Programs</a>
+          </li>
           <li class="dropdown">
             <a href="blog.html" class="dropdown-toggle"
               >Blogs <i class="fa-solid fa-angle-down"></i
@@ -41,11 +41,6 @@
               <li>
                 <a href="blog-sleep.html"
                   ><i class="fa-regular fa-moon"></i> Sleep Routine</a
-                >
-              </li>
-              <li>
-                <a href="blog-plant-protein.html"
-                  ><i class="fa-solid fa-bowl-food"></i> Plant Protein 101</a
                 >
               </li>
               <li>
@@ -65,18 +60,19 @@
               </li>
             </ul>
           </li>
+
           <li><a href="community.html">Community</a></li>
-          <li><a href="index.html#support">Support</a></li>
+          <li><a href="#support">Support</a></li>
         </ul>
         <div class="nav-profile">
-          <span class="notification-icon"
-            ><i class="fa-regular fa-bell"></i
-          ></span>
-          <a class="btn-consult" href="consultation.html"
-            ><i class="fa-solid fa-user-doctor"></i> Get Consultation</a
-          >
+          <a class="btn-consult" href="consultation.html">
+            <i class="fa-solid fa-user-doctor"></i>
+            Get Consultation
+          </a>
         </div>
       </div>
+
+      <!-- Mobile Drawer -->
       <aside class="mobile-drawer" aria-hidden="true">
         <div class="drawer-header">
           <span class="logo"
@@ -124,6 +120,7 @@
       </aside>
       <div class="drawer-backdrop" aria-hidden="true"></div>
     </nav>
+
     <header class="program-hero">
       <div class="container">
         <h1><i class="fa-solid fa-brain"></i> Mental Wellness</h1>
@@ -180,26 +177,27 @@
         </aside>
       </div>
     </main>
-    <footer class="footer">
+       <footer class="footer">
       <div class="footer-container">
         <div class="footer-brand">
           <div class="footer-logo">
             <span class="logo-icon"
-              ><i class="fa-solid fa-notes-medical"></i></span
-            ><span class="logo-text">WellnessHub</span>
+              ><i class="fa-solid fa-notes-medical"></i
+            ></span>
+            <span class="logo-text">WellnessHub</span>
           </div>
           <p>
             Empowering people to live healthier, happier lives through support,
             community, and expert guidance.
           </p>
           <div class="social-links">
-            <a href="#" class="social-link"
+            <a href="#" class="social-link" aria-label="Facebook"
               ><i class="fa-brands fa-facebook-f"></i
             ></a>
-            <a href="#" class="social-link"
+            <a href="#" class="social-link" aria-label="Twitter/X"
               ><i class="fa-brands fa-x-twitter"></i
             ></a>
-            <a href="#" class="social-link"
+            <a href="#" class="social-link" aria-label="Instagram"
               ><i class="fa-brands fa-instagram"></i
             ></a>
           </div>
@@ -208,20 +206,21 @@
           <div class="footer-column">
             <h4>Programs</h4>
             <ul>
-              <li><a href="fitness-strength.html">Fitness & Strength</a></li>
+              <li><a href="programs.html#fitness">Fitness & Strength</a></li>
               <li>
-                <a href="plant-based-nutrition.html">Plant-Based Nutrition</a>
+                <a href="programs.html#nutrition">Plant-Based Nutrition</a>
               </li>
-              <li><a href="mental-wellness.html">Mental Wellness</a></li>
+              <li><a href="programs.html#mental">Mental Wellness</a></li>
+              <li><a href="programs.html#weight">Weight Management</a></li>
             </ul>
           </div>
           <div class="footer-column">
             <h4>Support</h4>
             <ul>
-              <li><a href="index.html#support">Smoking Cessation</a></li>
-              <li><a href="index.html#support">Alcohol Recovery</a></li>
-              <li><a href="index.html#support">Addiction Support</a></li>
-              <li><a href="index.html#support">Crisis Resources</a></li>
+              <li><a href="#support">Smoking Cessation</a></li>
+              <li><a href="#support">Alcohol Recovery</a></li>
+              <li><a href="#support">Addiction Support</a></li>
+              <li><a href="#support">Crisis Resources</a></li>
             </ul>
           </div>
           <div class="footer-column">
@@ -239,7 +238,77 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 WellnessHub. All rights reserved.</p>
+        <p>
+          © 2024 WellnessHub. All rights reserved. | Privacy Policy | Terms of
+          Service
+        </p>
+      </div>
+    </footer>
+       <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon"
+              ><i class="fa-solid fa-notes-medical"></i
+            ></span>
+            <span class="logo-text">WellnessHub</span>
+          </div>
+          <p>
+            Empowering people to live healthier, happier lives through support,
+            community, and expert guidance.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-link" aria-label="Twitter/X"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="#" class="social-link" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Programs</h4>
+            <ul>
+              <li><a href="programs.html#fitness">Fitness & Strength</a></li>
+              <li>
+                <a href="programs.html#nutrition">Plant-Based Nutrition</a>
+              </li>
+              <li><a href="programs.html#mental">Mental Wellness</a></li>
+              <li><a href="programs.html#weight">Weight Management</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#support">Smoking Cessation</a></li>
+              <li><a href="#support">Alcohol Recovery</a></li>
+              <li><a href="#support">Addiction Support</a></li>
+              <li><a href="#support">Crisis Resources</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <ul>
+              <li><i class="fa-solid fa-phone"></i> 1-800-WELLNESS</li>
+              <li>
+                <i class="fa-regular fa-envelope"></i> support@wellnesshub.org
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i> Find Local Groups
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © 2024 WellnessHub. All rights reserved. | Privacy Policy | Terms of
+          Service
+        </p>
       </div>
     </footer>
     <script src="scripts/script.js"></script>

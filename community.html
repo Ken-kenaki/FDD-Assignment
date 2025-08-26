@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Community - WellnessHub</title>
     <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/global.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -18,28 +19,108 @@
     />
   </head>
   <body>
+    <!-- Navbar with desktop dropdown + mobile drawer -->
     <nav class="navbar">
       <div class="nav-container">
+        <button class="nav-toggle" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
         <a class="nav-logo" href="index.html">
           <span class="logo-icon"><i class="fa-solid fa-seedling"></i></span>
           <span class="logo-text">WellnessHub</span>
         </a>
         <ul class="nav-menu">
-          <li><a href="programs.html">Programs</a></li>
-          <li><a class="active" href="community.html">Community</a></li>
-          <li><a href="index.html#resources">Resources</a></li>
-          <li><a href="index.html#support">Support</a></li>
+          <li class="has-sub">
+            <a href="programs.html">Programs</a>
+          </li>
+          <li class="dropdown">
+            <a href="blog.html" class="dropdown-toggle"
+              >Blogs <i class="fa-solid fa-angle-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="blog-sleep.html"
+                  ><i class="fa-regular fa-moon"></i> Sleep Routine</a
+                >
+              </li>
+              <li>
+                <a href="blog-habit-stacking.html"
+                  ><i class="fa-solid fa-list-check"></i> Habit Stacking</a
+                >
+              </li>
+              <li>
+                <a href="blog-mindfulness.html"
+                  ><i class="fa-regular fa-face-smile"></i> Mindfulness</a
+                >
+              </li>
+              <li>
+                <a href="blog-beginner-strength.html"
+                  ><i class="fa-solid fa-dumbbell"></i> Beginner Strength</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="community.html">Community</a></li>
+          <li><a href="#support">Support</a></li>
         </ul>
         <div class="nav-profile">
-          <span class="notification-icon"
-            ><i class="fa-regular fa-bell"></i
-          ></span>
-          <a class="btn-consult" href="consultation.html"
-            ><i class="fa-solid fa-user-doctor"></i> Get Consultation</a
-          >
+          <a class="btn-consult" href="consultation.html">
+            <i class="fa-solid fa-user-doctor"></i>
+            Get Consultation
+          </a>
         </div>
       </div>
+
+      <!-- Mobile Drawer -->
+      <aside class="mobile-drawer" aria-hidden="true">
+        <div class="drawer-header">
+          <span class="logo"
+            ><i class="fa-solid fa-seedling"></i> WellnessHub</span
+          >
+          <button class="drawer-close" aria-label="Close menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <nav class="drawer-nav">
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="programs.html"
+            ><i class="fa-solid fa-list-check"></i> Programs</a
+          >
+          <details class="drawer-accordion">
+            <summary><i class="fa-solid fa-blog"></i> Blogs</summary>
+            <div class="drawer-submenu">
+              <a href="blog-sleep.html"
+                ><i class="fa-regular fa-moon"></i> Sleep Routine</a
+              >
+              <a href="blog-plant-protein.html"
+                ><i class="fa-solid fa-bowl-food"></i> Plant Protein 101</a
+              >
+              <a href="blog-habit-stacking.html"
+                ><i class="fa-solid fa-list-check"></i> Habit Stacking</a
+              >
+              <a href="blog-mindfulness.html"
+                ><i class="fa-regular fa-face-smile"></i> Mindfulness</a
+              >
+              <a href="blog-beginner-strength.html"
+                ><i class="fa-solid fa-dumbbell"></i> Beginner Strength</a
+              >
+            </div>
+          </details>
+          <a href="community.html"
+            ><i class="fa-solid fa-people-group"></i> Community</a
+          >
+          <a href="index.html#support"
+            ><i class="fa-solid fa-hand-holding-heart"></i> Support</a
+          >
+          <a class="drawer-consult" href="consultation.html"
+            ><i class="fa-solid fa-user-doctor"></i> Get Consultation</a
+          >
+        </nav>
+      </aside>
+      <div class="drawer-backdrop" aria-hidden="true"></div>
     </nav>
+
     <section class="page-hero">
       <div class="container">
         <h1><i class="fa-solid fa-people-group"></i> Community</h1>
@@ -106,13 +187,13 @@
             community, and expert guidance.
           </p>
           <div class="social-links">
-            <a href="#" class="social-link"
+            <a href="#" class="social-link" aria-label="Facebook"
               ><i class="fa-brands fa-facebook-f"></i
             ></a>
-            <a href="#" class="social-link"
+            <a href="#" class="social-link" aria-label="Twitter/X"
               ><i class="fa-brands fa-x-twitter"></i
             ></a>
-            <a href="#" class="social-link"
+            <a href="#" class="social-link" aria-label="Instagram"
               ><i class="fa-brands fa-instagram"></i
             ></a>
           </div>
@@ -132,10 +213,10 @@
           <div class="footer-column">
             <h4>Support</h4>
             <ul>
-              <li><a href="index.html#support">Smoking Cessation</a></li>
-              <li><a href="index.html#support">Alcohol Recovery</a></li>
-              <li><a href="index.html#support">Addiction Support</a></li>
-              <li><a href="index.html#support">Crisis Resources</a></li>
+              <li><a href="#support">Smoking Cessation</a></li>
+              <li><a href="#support">Alcohol Recovery</a></li>
+              <li><a href="#support">Addiction Support</a></li>
+              <li><a href="#support">Crisis Resources</a></li>
             </ul>
           </div>
           <div class="footer-column">
