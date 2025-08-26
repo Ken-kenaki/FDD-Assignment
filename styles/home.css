@@ -670,6 +670,20 @@
   }
 }
 @media (max-width: 768px) {
+
+  .support-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.impact-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+}
   .nav-toggle {
     display: block;
   }
