@@ -100,20 +100,6 @@ if (impactSection) {
   impactObserver.observe(impactSection);
 }
 
-// Button click handlers
-document.addEventListener("DOMContentLoaded", function () {
-  // CTA buttons
-  const startJourneyBtns = document.querySelectorAll(".btn-primary");
-  const exploreProgramBtns = document.querySelectorAll(".btn-secondary");
-  const joinGroupBtns = document.querySelectorAll(".join-group");
-
-  startJourneyBtns.forEach((btn) => {
-    btn.addEventListener("click", function () {
-      alert(
-        "Welcome to WellnessHub! This would redirect to the registration page."
-      );
-    });
-  });
 
   exploreProgramBtns.forEach((btn) => {
     btn.addEventListener("click", function () {
@@ -124,30 +110,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  joinGroupBtns.forEach((btn) => {
-    btn.addEventListener("click", function () {
-      const groupType = this.classList.contains("red")
-        ? "Smoking Cessation"
-        : "Alcohol Recovery";
-      alert(
-        `Thank you for your interest in joining the ${groupType} group! This would redirect to the group registration page.`
-      );
-    });
-  });
 
-  // Learn more links
-  const learnMoreLinks = document.querySelectorAll(".learn-more");
-  learnMoreLinks.forEach((link) => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-      const programName =
-        this.closest(".program-card").querySelector("h3").textContent;
-      alert(
-        `Learn more about our ${programName} program! This would redirect to the detailed program page.`
-      );
-    });
-  });
-});
+
 
 // Mobile menu toggle (if you want to add mobile menu functionality)
 function toggleMobileMenu() {

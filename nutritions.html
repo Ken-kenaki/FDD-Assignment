@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nutrition Guide - VitalLife</title>
     <link rel="stylesheet" href="styles/nutrion-styles.css" />
-    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -13,7 +17,7 @@
   </head>
   <body>
     <!-- Navigation -->
-<!-- Navbar with desktop dropdown + mobile drawer -->
+    <!-- Navbar with desktop dropdown + mobile drawer -->
     <nav class="navbar">
       <div class="nav-container">
         <button class="nav-toggle" aria-label="Open menu">
@@ -115,7 +119,6 @@
       <div class="drawer-backdrop" aria-hidden="true"></div>
     </nav>
 
-
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-container">
@@ -132,16 +135,16 @@
         </div>
         <div class="hero-illustration">
           <div class="fruits-vegetables">
-            <div class="fruit eggplant">🍆</div>
-            <div class="fruit carrot">🥕</div>
-            <div class="fruit tomato">🍅</div>
-            <div class="fruit orange">🍊</div>
-            <div class="fruit lime">🟢</div>
-            <div class="fruit grape">🍇</div>
-            <div class="fruit avocado">🥑</div>
-            <div class="fruit bell-pepper">🫑</div>
-            <div class="fruit cherry">🍒</div>
-            <div class="fruit broccoli">🥦</div>
+            <div class="fruit"><i class="fas fa-eggplant"></i></div>
+            <div class="fruit"><i class="fas fa-carrot"></i></div>
+            <div class="fruit"><i class="fas fa-apple-alt"></i></div>
+            <div class="fruit"><i class="fas fa-lemon"></i></div>
+            <div class="fruit"><i class="fas fa-pepper-hot"></i></div>
+            <div class="fruit"><i class="fas fa-grapes"></i></div>
+            <div class="fruit"><i class="fas fa-avocado"></i></div>
+            <div class="fruit"><i class="fas fa-pepper-hot"></i></div>
+            <div class="fruit"><i class="fas fa-cherries"></i></div>
+            <div class="fruit"><i class="fas fa-seedling"></i></div>
           </div>
         </div>
       </div>
@@ -152,7 +155,7 @@
       <div class="container">
         <div class="categories-grid">
           <div class="category-card">
-            <div class="category-icon green">🥬</div>
+            <div class="category-icon green"><i class="fas fa-leaf"></i></div>
             <h3>Whole Foods</h3>
             <p>
               Learn about nutrient-dense whole foods and their benefits for your
@@ -161,7 +164,9 @@
             <a href="#" class="category-link">Explore Guide →</a>
           </div>
           <div class="category-card">
-            <div class="category-icon blue">💪</div>
+            <div class="category-icon blue">
+              <i class="fas fa-dumbbell"></i>
+            </div>
             <h3>Sports Nutrition</h3>
             <p>
               Optimize your performance with proper pre and post-workout
@@ -170,7 +175,9 @@
             <a href="#" class="category-link">Learn More →</a>
           </div>
           <div class="category-card">
-            <div class="category-icon purple">🌱</div>
+            <div class="category-icon purple">
+              <i class="fas fa-seedling"></i>
+            </div>
             <h3>Plant-Based</h3>
             <p>
               Discover the benefits of plant-based nutrition for health and
@@ -243,15 +250,19 @@
               <h3>Quick Resources</h3>
               <div class="resource-links">
                 <a href="#" class="resource-item">
-                  <span class="resource-icon">🧮</span>
+                  <span class="resource-icon"
+                    ><i class="fas fa-calculator"></i
+                  ></span>
                   <span>Calorie Calculator</span>
                 </a>
                 <a href="#" class="resource-item">
-                  <span class="resource-icon">🍽️</span>
+                  <span class="resource-icon"
+                    ><i class="fas fa-utensils"></i
+                  ></span>
                   <span>Meal Planner</span>
                 </a>
                 <a href="#" class="resource-item">
-                  <span class="resource-icon">📊</span>
+                  <span class="resource-icon"><i class="fas fa-book"></i></span>
                   <span>Recipe Database</span>
                 </a>
               </div>
@@ -294,24 +305,24 @@
         <h2>Meal Planning Tips</h2>
         <div class="tips-grid">
           <div class="tip-item">
-            <div class="tip-icon">✅</div>
+            <div class="tip-icon"><i class="fas fa-calendar-check"></i></div>
             <h3>Plan Ahead</h3>
             <p>Prepare meals in advance to maintain healthy eating habits.</p>
           </div>
           <div class="tip-item">
-            <div class="tip-icon">✅</div>
+            <div class="tip-icon"><i class="fas fa-tint"></i></div>
             <h3>Stay Hydrated</h3>
             <p>Drink 8-10 glasses of water daily for optimal health.</p>
           </div>
           <div class="tip-item">
-            <div class="tip-icon">✅</div>
+            <div class="tip-icon"><i class="fas fa-balance-scale"></i></div>
             <h3>Portion Control</h3>
             <p>
               Use the plate method: 1/2 vegetables, 1/4 protein, 1/4 grains.
             </p>
           </div>
           <div class="tip-item">
-            <div class="tip-icon">✅</div>
+            <div class="tip-icon"><i class="fas fa-brain"></i></div>
             <h3>Mindful Eating</h3>
             <p>Eat slowly and pay attention to hunger and fullness cues.</p>
           </div>
@@ -386,7 +397,5 @@
         </p>
       </div>
     </footer>
-
-    <script src="scripts/nutrition.js"></script>
   </body>
 </html>
